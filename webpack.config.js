@@ -160,6 +160,15 @@ var options = {
         },
       ],
     }),
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: 'src/assets/img/icon-48.png',
+          to: path.join(__dirname, 'build'),
+          force: true,
+        },
+      ],
+    }),
     new HtmlWebpackPlugin({
       template: path.join(__dirname, 'src', 'pages', 'Newtab', 'index.html'),
       filename: 'newtab.html',

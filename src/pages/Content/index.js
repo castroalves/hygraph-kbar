@@ -1,6 +1,17 @@
-import { printLine } from './modules/print';
+import React from 'react';
+import { render } from 'react-dom';
+import CommandBar from './modules/CommandBar';
 
-console.log('Content script works!');
-console.log('Must reload extension for modifications to take effect.');
+const App = () => {
+    return <CommandBar />;
+};
 
-printLine("Using the 'printLine' function from the Print Module");
+const root = document.createElement("div");
+root.id = "app-container";
+
+render(
+    <App />,
+    root
+);
+
+if (module.hot) module.hot.accept();
