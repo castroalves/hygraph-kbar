@@ -8,24 +8,14 @@
   },
   "content_scripts": [
     {
-      "matches": [
-        "https://*.hygraph.com/*"
-      ],
-      "js": [
-        "contentScript.bundle.js"
-      ],
-      "css": [
-        "content.styles.css"
-      ]
+      "matches": ["https://*.hygraph.com/*", "https://*.hygraph.dev/*"],
+      "js": ["contentScript.bundle.js"],
+      "css": ["content.styles.css"]
     }
   ],
   "web_accessible_resources": [
     {
-      "resources": [
-        "content.styles.css",
-        "icon-48.png",
-        "icon-48.png"
-      ],
+      "resources": ["content.styles.css", "icon-48.png", "icon-48.png"],
       "matches": []
     }
   ]

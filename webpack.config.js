@@ -13,6 +13,8 @@ var alias = {
   'react-dom': '@hot-loader/react-dom',
 };
 
+const BUILD_DIR = `builds/hygraph-kbar`;
+
 // load the secrets
 var secretsPath = path.join(__dirname, 'secrets.' + env.NODE_ENV + '.js');
 
@@ -49,7 +51,7 @@ var options = {
   },
   output: {
     filename: '[name].bundle.js',
-    path: path.resolve(__dirname, 'build'),
+    path: path.resolve(__dirname, BUILD_DIR),
     clean: true,
     publicPath: ASSET_PATH,
   },
@@ -118,7 +120,7 @@ var options = {
       patterns: [
         {
           from: 'src/manifest.json',
-          to: path.join(__dirname, 'build'),
+          to: path.join(__dirname, BUILD_DIR),
           force: true,
           transform: function (content, path) {
             // generates the manifest file using the package.json informations
@@ -137,7 +139,7 @@ var options = {
       patterns: [
         {
           from: 'src/pages/Content/content.styles.css',
-          to: path.join(__dirname, 'build'),
+          to: path.join(__dirname, BUILD_DIR),
           force: true,
         },
       ],
@@ -146,7 +148,7 @@ var options = {
       patterns: [
         {
           from: 'src/assets/img/icon-128.png',
-          to: path.join(__dirname, 'build'),
+          to: path.join(__dirname, BUILD_DIR),
           force: true,
         },
       ],
@@ -155,7 +157,7 @@ var options = {
       patterns: [
         {
           from: 'src/assets/img/icon-34.png',
-          to: path.join(__dirname, 'build'),
+          to: path.join(__dirname, BUILD_DIR),
           force: true,
         },
       ],
@@ -164,7 +166,7 @@ var options = {
       patterns: [
         {
           from: 'src/assets/img/icon-48.png',
-          to: path.join(__dirname, 'build'),
+          to: path.join(__dirname, BUILD_DIR),
           force: true,
         },
       ],
