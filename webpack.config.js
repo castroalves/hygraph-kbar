@@ -13,7 +13,7 @@ var alias = {
   'react-dom': '@hot-loader/react-dom',
 };
 
-const BUILD_DIR = `builds/hygraph-kbar`;
+const BUILD_DIR = `releases/hygraph-kbar`;
 
 // load the secrets
 var secretsPath = path.join(__dirname, 'secrets.' + env.NODE_ENV + '.js');
