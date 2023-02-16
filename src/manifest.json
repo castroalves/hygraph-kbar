@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
-  "name": "GraphCMS Shortcuts",
-  "description": "GraphCMS Shortcuts",
+  "name": "Hygraph Command Bar",
+  "description": "Hygraph Command Bar",
   "options_page": "options.html",
   "icons": {
     "48": "icon-48.png"
@@ -9,7 +9,7 @@
   "content_scripts": [
     {
       "matches": [
-        "https://app.graphcms.com/*"
+        "https://*.hygraph.com/*"
       ],
       "js": [
         "contentScript.bundle.js"
