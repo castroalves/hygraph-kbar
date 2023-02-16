@@ -4,7 +4,7 @@ Are you tired of clicking around Hygraph sections? Me too! That's why I've creat
 
 ## How to Install
 
-1. Download the latest ZIP version in the [releases/](tree/main/releases) folder
+1. Download the [latest release](https://github.com/castroalves/hygraph-kbar/releases) version
 2. Extract it
 3. Open Chrome Browser
 4. Click on the **Extensions** icon, then go to **Manage Extensions**
